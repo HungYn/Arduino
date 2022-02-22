@@ -25,7 +25,7 @@ void IRAM_ATTR onTimer1(){
 void IRAM_ATTR onTimer2(){
   portENTER_CRITICAL(&mux1);
   isLED2 = !isLED2;
-  digitalWrite(LED_BUILTIN, isLED2);
+  digitalWrite(LED2, isLED2);
   portEXIT_CRITICAL(&mux1);
 }
 
